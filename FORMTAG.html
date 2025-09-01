@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <h2>Registration Form Exmaple</h2>
+    <!-- <form action="/submit" method></form> -->
+  <form action="/submit" method="post" autocomplete="on" target="_blank">
+    <table border="1" cellpadding="8" cellspacing="0">
+     
+      <tr>
+        <td><label for="fullname">Full Name:</label></td>
+        <td><input type="text" id="fullname" name="fullname" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password" minlength="6" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input type="date" id="dob" name="dob"></td>
+      </tr>
+
+      <tr>
+        <td><label for="age">Age:</label></td>
+        <td><input type="number" id="age" name="age" min="18" max="100"></td>
+      </tr>
+
+      <tr>
+        <td><label for="preferred-time">Preferred Time:</label></td>
+        <td><input type="time" id="preferred-time" name="preferred-time"></td>
+      </tr>
+
+      <tr>
+        <td><label for="phone">Phone:</label></td>
+        <td><input type="tel" id="phone" name="phone" maxlength="10"></td>
+      </tr>
+
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Select Skills:</td>
+        <td>
+          <input type="checkbox" id="html" name="skills" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="checkbox" id="css" name="skills" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="checkbox" id="js" name="skills" value="JavaScript">
+          <label for="js">JavaScript</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="city">Select City:</label></td>
+        <td>
+          <select id="city" name="city">
+            <option value="">--Select--</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="delhi">Delhi</option>
+            <option value="ahmedabad">Ahmedabad</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="bio">Short Bio:</label></td>
+        <td><textarea id="bio" name="bio" rows="4" cols="40"></textarea></td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Register">
+          <input type="reset" value="Clear Form">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>
